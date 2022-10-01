@@ -35,7 +35,7 @@ public class main {
         int sumInt = w2 + w8 + w10 + w16;
         int sumByte = b2 + b8 + b10 + b16;
         double sumDouble = y2 + y8 + y10 + y16;
-        int sumLong = Math.toIntExact(e2 + e8 + e10 + e16);
+        int sumLong = (int) (e2 + e8 + e10 + e16);
         int sumShort = q2 + q8 + q10 + q16;
         float sumFloat = t2 + t8 + t10 + t16;
         int sumChar = r2 + r8 + r10 + r16;
