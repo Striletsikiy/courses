@@ -19,10 +19,10 @@ public class main {
         long e8 = 01L;
         long e10 = 0L;
         long e16 = 0x10L;
-        char r2 =  377;
-        char r8 = 43;
-        char r10 = 53;
-        char r16 = 64;
+        char r2 = '\u0436';
+        char r8 = '\377';
+        char r10 = '\u0061';
+        char r16 = '\12' ;
         float t2= 0b1L;
         float t8 = 0377L;
         float t10 = 34.34f;
