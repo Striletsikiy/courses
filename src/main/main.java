@@ -1,58 +1,44 @@
 package main;
 
+import basic_java.BasicJava;
+import statements_and_loops.Task;
+import work_with_text_and_arrays.Task2;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+
+import java.util.Scanner;
+
 public class main {
+
     public static void main(String[] args){
 
-        byte b2 = 0b10;
-        byte b8 = 010;
-        byte b10 = 10;
-        byte b16 = 0x10;
-        short q2 = 1000;
-        short q8 = 11;
-        short q10 = 24;
-        short q16 = 16;
-        int w2 = 0b1;
-        int w8 = 0377;
-        int w10 = 1_000_000;
-        int w16 =  0xFF_FF;
-        long e2 = 0b1L;
-        long e8 = 01L;
-        long e10 = 0L;
-        long e16 = 0x10L;
-        char r2 = '\u0436';
-        char r8 = '\377';
-        char r10 = '\u0061';
-        char r16 = '\12' ;
-        float t2= 0b1L;
-        float t8 = 0377L;
-        float t10 = 34.34f;
-        float t16 = 0x12P2F;
-        double y2 = 0b1L;
-        double y8 = 01L;
-        double y10 = 1E3;
-        double y16 = 0xFP-2;
+        BasicJava basicJava = new BasicJava();
+        basicJava.calculate();
 
-        int sumInt = w2 + w8 + w10 + w16;
-        int sumByte = b2 + b8 + b10 + b16;
-        double sumDouble = y2 + y8 + y10 + y16;
-        int sumLong = (int) (e2 + e8 + e10 + e16);
-        int sumShort = q2 + q8 + q10 + q16;
-        float sumFloat = t2 + t8 + t10 + t16;
-        int sumChar = r2 + r8 + r10 + r16;
+        Task task = new Task();
+        task.comparingTwoNumbers();
 
-        long result = (long)  (sumInt + sumByte + sumDouble + sumLong + sumFloat + sumShort + sumChar);
-        System.out.println(result);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println(convertToCelsius(result));
-        System.out.println(convertToСentimeters(result));
+        task.sumOfNaturalNumbers(scanner);
+        task.factorial(scanner);
+        task.distanceBetweenTwoPoints(scanner);
+        task.mathOperations(scanner);
+//        task.theSumOfTheDigits0fAnInteger();
+//        task.tenYearNumber(int decimal);
+
+        Task2 task2 = new Task2();
+        task2.qw();
+        task2.er();
+        task2.rt();
+        task2.averageValue();
+        task2.maxMin();
+        task2.equalityChecks();
+        task2.DeleteAnElemenFromAnArray();
+        task2.stringPerNumber();
+        task2.duplicateElementsInAnArray();
+
 
     }
+   }
 
-    public static double convertToCelsius(double degreeFahrenheit) {
-        return (degreeFahrenheit - 32) * 5 / 9;
-    }
-
-    public static double convertToСentimeters(double inches){
-        return inches * 2.54;
-    }
-}
